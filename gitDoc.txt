@@ -1,0 +1,97 @@
+# git document for personal use only
+# Keep updating the document if necessary
+# author - glondhe
+
+# Adding a collaborator on github
+https://help.github.jp/enterprise/2.11/user/articles/inviting-collaborators-to-a-personal-repository/
+
+# commonly used commands are as follows
+# add if necessary
+
+git clone		-
+git checkout	-
+git add			-
+git commit		- 
+git pull		- 
+git status		- 
+git push		- 
+git fetch		- 
+git merge		-
+git branch		-
+git diff		-
+
+# create a minor branch from major
+git checkout -b minor
+
+# setting up upstream branch
+git push --set-upstream origin minor
+
+# git push
+git push
+
+# git merge locally
+# checkout to the merge_to_branch_name and
+# run
+git merge merge_from_branch_name
+
+# difference across branches
+git diff from_branch_name to_branch_name
+
+# deleting a branch
+
+# checkout to the master branch
+git chekcout master
+
+# now delete the to_be_deleted_branch
+git branch -d to_be_deleted_branch_name
+
+# delete remote branch
+git push origin --delete to_be_deleted_branch_name
+
+# changing the current url with other username
+# Get previous url using
+git config --get remote.origin.url
+
+# Will output into something like this:
+# https://user-name@bitbucket.org/repo-name.git
+
+# Change username in our case amitgodbole with mg-np
+# Use following command to update this into our project directory
+git remote set-url origin https://user-name@bitbucket.org/repo-name.git
+
+# cloning a particular branch
+git clone --single-branch --branchc no-env repo-url
+
+# see all logs
+git log
+
+# see specific branch's log
+git log branch-name
+
+# git tag - tag_name(generally version)
+git tag tag_name
+
+# how to name a tag
+# v<major>.<minor>.<patch>
+# example
+# v1.2.3
+
+# git tag with message
+git tag -a v1.1 -m "write your message here"
+
+# git tag with specific commit
+git tag tag-name commit-SHA
+
+# git tag for last commit with message
+git tag -a tag-name HEAD -m "message here"
+
+# push your tags
+git push --tags
+
+# delete a tag
+git tag -d tag-name
+
+
+# to do tasks in git
+	# git rebase
+	# 

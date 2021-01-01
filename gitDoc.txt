@@ -55,7 +55,7 @@ git config --get remote.origin.url
 # Will output into something like this:
 # https://user-name@bitbucket.org/repo-name.git
 
-# Change username in our case amitgodbole with mg-np
+# Change username in our case user-name with actual user-name
 # Use following command to update this into our project directory
 git remote set-url origin https://user-name@bitbucket.org/repo-name.git
 
